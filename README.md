@@ -65,17 +65,34 @@ Additionally, customers lacked full control over their servers—no SSH access, 
 
 - [**Ansible**](https://www.ansible.com): An open-source IT automation tool that simplifies the management, configuration, and deployment of systems and applications.
 
-## Setup
+## Documentation
 
-To self host or to setup Press locally follow the steps in the [Local Development Environment Setup Guide](https://docs.frappe.io/cloud/local-fc-setup).
+Welcome to the internal documentation for Press. This documentation maps out the architecture, workflows, and development guidelines based on the actual implementation of the codebase.
 
-### Migrate to Frappe Cloud
+### Start Here
+1. **[System Overview](docs/system-overview.md):** Understand what Press is, who uses it, and its major capabilities.
+2. **[System Architecture](docs/architecture.md):** High-level component interactions, control plane vs. execution plane.
+3. **[Workflows](docs/workflows.md):** Sequence diagrams tracing core actions like Site Creation and Server Provisioning.
 
-If you are planning to migrate your site to Frappe Cloud, please refer to [this YouTube video](https://www.youtube.com/watch?v=Xb9QHnUrIEk)
+### Development & Operations
+*   **[Installation & Setup](docs/installation.md):** How to run the Press backend and Dashboard locally.
+*   **[Configuration](docs/configuration.md):** Environment variables and database configuration.
+*   **[Development Guide](docs/development.md):** Local workflows and build commands.
+*   **[Deployment & Operations](docs/deployment.md):** CI/CD pipeline and production architecture.
+*   **[Infrastructure Sizing (AWS)](docs/infrastructure-sizing.md):** Required server architecture for scaling from 70 to 3000 sites.
+*   **[Testing](docs/testing.md):** Running Python and Playwright tests.
+*   **[Troubleshooting](docs/troubleshooting.md):** Debugging failed jobs and agent connectivity.
 
-### Pre-commit
+### Deep Dives
+*   **[Domain Model](docs/domain-model.md):** Lifecycle and relationships of core Frappe DocTypes.
+*   **[Agent Protocol](docs/agent-protocol.md):** How Press communicates with the remote execution Agent.
+*   **[API Interface](docs/api.md):** Understanding `run_doc_method` and Dashboard communication.
+*   **[Dependencies](docs/dependencies.md):** Core Python, Vue, and Infrastructure libraries.
+*   **[Documentation Gaps](docs/documentation-gaps.md):** Areas needing further explanation.
 
-There's a [pre-commit](https://pre-commit.com/) hook included in the repo. You can set it up by running [setup-pre-commit.sh](https://github.com/frappe/press/blob/develop/setup-pre-commit.sh) script.
+## Migrate to Frappe Cloud
+
+If you are planning to migrate your site to Frappe Cloud, please refer to [this YouTube video](https://www.youtube.com/watch?v=Xb9QHnUrIEk).
 
 ## Learn and connect
 
