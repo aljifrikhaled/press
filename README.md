@@ -79,6 +79,7 @@ Welcome to the internal documentation for Press. This documentation maps out the
 *   **[Configuration](docs/configuration.md):** Environment variables and database configuration.
 *   **[Development Guide](docs/development.md):** Local workflows and build commands.
 *   **[Deployment & Operations](docs/deployment.md):** CI/CD pipeline and production architecture.
+*   **[Infrastructure Sizing (AWS)](docs/infrastructure-sizing.md):** Required server architecture for scaling from 70 to 3000 sites.
 *   **[Testing](docs/testing.md):** Running Python and Playwright tests.
 *   **[Troubleshooting](docs/troubleshooting.md):** Debugging failed jobs and agent connectivity.
 
