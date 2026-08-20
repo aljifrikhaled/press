@@ -69,6 +69,8 @@ Additionally, customers lacked full control over their servers—no SSH access, 
 
 Welcome to the internal documentation for Press. This documentation maps out the architecture, workflows, and development guidelines based on the actual implementation of the codebase.
 
+> 🧭 **New here? Check out the [Reading Guide (Learning Paths)](docs/reading-guide.md)** to find the best documents to read based on your role (e.g., Developer, DevOps, Product).
+
 ### Start Here
 1. **[System Overview](docs/system-overview.md):** Understand what Press is, who uses it, and its major capabilities.
 2. **[System Architecture](docs/architecture.md):** High-level component interactions, control plane vs. execution plane.
