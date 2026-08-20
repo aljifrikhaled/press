@@ -1,11 +1,11 @@
 # Documentation Gaps
 
-This document identifies areas where the codebase lacks sufficient documentation or where current documentation requires expansion.
+This document previously identified areas where the codebase lacked sufficient documentation. **These gaps have now been addressed** in the following new documents:
 
-| Area | Existing Documentation | Actual Implementation | Gap | Priority |
-| :--- | :--- | :--- | :--- | :--- |
-| **Dashboard-Press Interface** | None | The Dashboard extensively uses `press.api.client.run_doc_method` to bypass standard REST patterns. | Needs a dedicated guide explaining how to trace `run_doc_method` calls to their Python implementation for new developers. | Critical |
-| **Agent Payload Protocol** | None | Agent jobs (like `New Site` or `Backup Site`) construct complex JSON payloads (apps, configs, passwords). | There is no schema or documentation of the expected payload for each Agent Job type. | High |
-| **Cloud Provider Mapping** | None | The `Virtual Machine` DocType abstracts AWS, Hetzner, OCI, and Scaleway. | Needs documentation on how cloud-specific metadata maps to standard Press server models. | Medium |
-| **Ansible Flowcharts** | None | `server.yml` and `self_hosted.yml` install the Agent, setup NGINX, and harden security. | A visual flow of what happens during server provisioning is missing. | Medium |
-| **Operational Troubleshooting** | None | Operations rely heavily on checking `Agent Job` error tracebacks and `Ansible Console Log`. | A playbook/guide for support engineers on debugging failed site creations or updates using Frappe Desk is needed. | High |
+| Previously Identified Gap | Addressed In | Description |
+| :--- | :--- | :--- |
+| **Dashboard-Press Interface** | `docs/dashboard-press-interface.md` | Dedicated guide explaining how to trace `run_doc_method` calls with a full example of the SaaS trial site creation workflow. |
+| **Agent Payload Protocol** | `docs/agent-payload-protocol.md` | Examples of the JSON payload structures sent for creating and restoring sites via the Agent Job system. |
+| **Cloud Provider Mapping** | `docs/cloud-provider-mapping.md` | Documentation on how the `Virtual Machine` DocType overrides client methods to abstract AWS, Hetzner, DigitalOcean, and OCI. |
+| **Ansible Flowcharts** | `docs/ansible-flowcharts.md` | A Mermaid visual flowchart detailing the role execution sequence in the `server.yml` provisioning process. |
+| **Operational Troubleshooting** | `docs/troubleshooting.md` | The troubleshooting guide was expanded into an operational playbook detailing how to trace errors down to the `Ansible Console Log` and `Agent Job Step` data fields. |
