@@ -9,3 +9,6 @@ This document previously identified areas where the codebase lacked sufficient d
 | **Cloud Provider Mapping** | `docs/cloud-provider-mapping.md` | Documentation on how the `Virtual Machine` DocType overrides client methods to abstract AWS, Hetzner, DigitalOcean, and OCI. |
 | **Ansible Flowcharts** | `docs/ansible-flowcharts.md` | A Mermaid visual flowchart detailing the role execution sequence in the `server.yml` provisioning process. |
 | **Operational Troubleshooting** | `docs/troubleshooting.md` | The troubleshooting guide was expanded into an operational playbook detailing how to trace errors down to the `Ansible Console Log` and `Agent Job Step` data fields. |
+| **Installation Types** | `docs/installation-types.md` | Details the specific requirements and Ansible playbooks triggered for Unified, App, Database, and Proxy servers. |
+| **Core Functions Guide** | `docs/implementation-guide.md` | Implementation guide covering `run_doc_method`, `Site Action` state machines, and background job handling. |
+| **Partner Lifecycle** | `docs/partner-lifecycle.md` | Trace of the partner workflow from `Partner Leads` to automatic `Payout Order` generation and commission transfers. |

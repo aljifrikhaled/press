@@ -85,6 +85,9 @@ Welcome to the internal documentation for Press. This documentation maps out the
 
 ### Deep Dives
 *   **[Domain Model](docs/domain-model.md):** Lifecycle and relationships of core Frappe DocTypes.
+*   **[Installation Types](docs/installation-types.md):** Differences between App, Database, Proxy, and Unified servers.
+*   **[Implementation Guide](docs/implementation-guide.md):** How to work with core functions, async state, and Site Actions.
+*   **[Partner Lifecycle](docs/partner-lifecycle.md):** Tracing the Partner workflow from leads to commission payouts.
 *   **[Dashboard-Press Interface](docs/dashboard-press-interface.md):** Tracing `run_doc_method` API calls with examples.
 *   **[Agent Protocol](docs/agent-protocol.md):** How Press communicates with the remote execution Agent.
 *   **[Agent Payload Protocol](docs/agent-payload-protocol.md):** Examples of JSON payloads sent to the Agent.
@@ -92,7 +95,7 @@ Welcome to the internal documentation for Press. This documentation maps out the
 *   **[Cloud Provider Mapping](docs/cloud-provider-mapping.md):** How Press abstracts AWS, Hetzner, and OCI.
 *   **[Ansible Flowcharts](docs/ansible-flowcharts.md):** Visual flow of the `server.yml` provisioning process.
 *   **[Dependencies](docs/dependencies.md):** Core Python, Vue, and Infrastructure libraries.
-*   **[Documentation Gaps](docs/documentation-gaps.md):** Areas needing further explanation.
+*   **[Documentation Gaps](docs/documentation-gaps.md):** Tracker of previously missing documentation.
 
 ## Migrate to Frappe Cloud
 
